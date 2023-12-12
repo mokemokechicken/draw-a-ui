@@ -5,3 +5,7 @@ build:
 @PHONY: run
 run:
 	docker run -it -p 3000:3000 -e OPENAI_API_KEY mokemokechicken/draw-a-ui
+
+@PHONY: push
+push:
+	docker push mokemokechicken/draw-a-ui
